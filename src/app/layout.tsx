@@ -1,4 +1,7 @@
+import React, { ReactNode } from "react";
 import type { Metadata } from "next";
+import { ColumnsProvider } from "@/context/ColumnsContext";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,11 +12,15 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <ColumnsProvider>
+          <main>{children}</main>
+        </ColumnsProvider>
+      </body>
     </html>
   );
 }
