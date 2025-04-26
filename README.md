@@ -2,6 +2,8 @@
 
 **Um board de kanban simples e direto, feito para organizar suas tarefas de forma rápida e eficiente.**
 
+Acesse o projeto online: [Kanban Board](https://kanban-board-ashen-psi.vercel.app/)
+
 ## ✨ Tecnologias Utilizadas
 
 - [Next.js 15](https://nextjs.org/)
@@ -11,6 +13,7 @@
 - [Context API](https://react.dev/learn/passing-data-deeply-with-context)
 - [TypeScript](https://www.typescriptlang.org/) com tipagens separadas e reutilizadas
 - [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) para persistência dos dados
+- [React Icons](https://react-icons.github.io/react-icons/) para ícones dinâmicos e modernos
 
 ## 🚀 Funcionalidades
 
