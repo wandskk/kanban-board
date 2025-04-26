@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { ColumnsProvider } from "@/context/ColumnsContext";
 
 import "./globals.css";
+import { StorageProvider } from "@/context/StorageContext";
 
 export const metadata: Metadata = {
   title: "Kanban Board",
@@ -18,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased`}>
         <ColumnsProvider>
-          <main>{children}</main>
+          <StorageProvider>
+            <main>{children}</main>
+          </StorageProvider>
         </ColumnsProvider>
       </body>
     </html>

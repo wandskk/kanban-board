@@ -133,15 +133,21 @@ const KanbanBoardButton = {
 
 const KanbanBoardColumnPortal = () => {
   const { activeColumn, activeTask } = useColumns();
+  const [mounted, setMounted] = React.useState(false);
 
-  if (document)
-    return createPortal(
-      <DragOverlay>
-        {activeColumn && <ColumnContainer column={activeColumn} />}
-        {activeTask && <TaskCard task={activeTask} />}
-      </DragOverlay>,
-      document.body
-    );
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  return createPortal(
+    <DragOverlay>
+      {activeColumn && <ColumnContainer column={activeColumn} />}
+      {activeTask && <TaskCard task={activeTask} />}
+    </DragOverlay>,
+    document.body
+  );
 };
 
 export default KanbanBoard;
