@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
 import type { Metadata } from "next";
 import { ColumnsProvider } from "@/context/ColumnsContext";
+import { StorageProvider } from "@/provider/StorageProvider";
 
 import "./globals.css";
-import { StorageProvider } from "@/context/StorageContext";
 
 export const metadata: Metadata = {
   title: "Kanban Board",
