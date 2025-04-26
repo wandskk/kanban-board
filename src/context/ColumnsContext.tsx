@@ -43,7 +43,7 @@ const ColumnsProvider: React.FC<{ children: React.ReactNode }> = ({
       const newTasks = tasks.filter((task) => task.columnId !== id);
       setTasks(newTasks);
     },
-    [columns]
+    [columns, tasks]
   );
 
   const updateColumn = React.useCallback(

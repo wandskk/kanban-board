@@ -1,3 +1,5 @@
+"use client";
+
 import KanbanBoard from "@/components/KanbanBoard/KanbanBoard";
 import React from "react";
 
