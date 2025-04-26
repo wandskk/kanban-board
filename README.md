@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kanban Board
 
-## Getting Started
+**Um board de kanban simples e direto, feito para organizar suas tarefas de forma rápida e eficiente.**
 
-First, run the development server:
+## ✨ Tecnologias Utilizadas
+
+- [Next.js 15](https://nextjs.org/)
+- [React 19](https://react.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [DND Kit](https://dndkit.com/) (drag and drop)
+- [Context API](https://react.dev/learn/passing-data-deeply-with-context)
+- [TypeScript](https://www.typescriptlang.org/) com tipagens separadas e reutilizadas
+- [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) para persistência dos dados
+
+## 🚀 Funcionalidades
+
+- Criar colunas personalizadas
+- Criar tarefas (tasks) dentro das colunas
+- Renomear colunas e tarefas
+- Reordenar colunas arrastando-as
+- Mover tarefas entre colunas
+- Reordenar tarefas dentro da mesma coluna apenas arrastando
+- Persistência dos dados no navegador usando LocalStorage
+- Interface responsiva e moderna usando Tailwind CSS
+- Estrutura limpa e componentizada seguindo boas práticas (Clean Code)
+- Tipagens TypeScript separadas e reutilizadas para melhor manutenção
+
+## 📦 Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/kanban-board.git
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd kanban-board
+```
+
+Instale as dependências:
+
+```bash
+npm install
+# ou
+yarn
+```
+
+Crie um arquivo `.env` na raiz do projeto com a seguinte variável:
+
+```env
+NEXT_PUBLIC_STORAGE_KEY=sua-chave-unica
+```
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto estará disponível em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Scripts Disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev`: Inicia o servidor de desenvolvimento com Turbopack
+- `npm run build`: Gera a build de produção
+- `npm run start`: Inicia o servidor com a build de produção
+- `npm run lint`: Roda o linter para manter a qualidade do código
 
-## Learn More
+## 📄 Licença
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está licenciado sob a licença MIT.
