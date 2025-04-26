@@ -1,4 +1,4 @@
-import { Id } from "./id";
+import { Id } from "@/types/id";
 
 export type Column = {
     id: Id;
