@@ -157,6 +157,8 @@ const ColumnsProvider: React.FC<{ children: React.ReactNode }> = ({
     createTask,
     deleteTask,
     updateTask,
+    setColumns,
+    setTasks,
   };
 
   return (

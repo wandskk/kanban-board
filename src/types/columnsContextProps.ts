@@ -21,4 +21,6 @@ export type ColumnsContextProps = {
     createTask: (columnId: Id) => void;
     deleteTask: (taskId: Id) => void;
     updateTask: (taskId: Id, content: string) => void;
+    setColumns: Dispatch<SetStateAction<Column[] | []>>;
+    setTasks: Dispatch<SetStateAction<Task[] | []>>;
 };
